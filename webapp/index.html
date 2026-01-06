@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Report Bot</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>📊 Hisobot yaratish</h1>
+      <p>Ma’lumotlarni to‘ldiring va guruhga yuboring</p>
+    </header>
+
+    <form id="reportForm">
+      <div class="field">
+        <label>Sarlavha</label>
+        <input type="text" id="title" placeholder="Masalan: Daily Report" required />
+      </div>
+
+      <div class="field">
+        <label>Hisobot matni</label>
+        <textarea id="content" rows="6" placeholder="Bugun bajarilgan ishlar..." required></textarea>
+      </div>
+
+      <div class="field">
+        <label>Guruh ID</label>
+        <input type="number" id="group" placeholder="-100123456789" required />
+      </div>
+
+      <button type="submit" id="submitBtn">
+        🚀 Hisobotni yuborish
+      </button>
+    </form>
+
+    <footer>
+      <span id="userInfo"></span>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
